@@ -13,13 +13,18 @@ public abstract class Entity {
     //location
     protected float x, y;
 
+    //for size
+    protected int width, height;
+
     /**
      * Constructor
      * Argument Type: flaot
      */
-    public Entity(float x, float y) {
+    public Entity(float x, float y,int width, int height) {
         this.x = x;
         this.y = y;
+        this.width = width;
+        this.height = height;
     }
 
     /**
@@ -35,4 +40,77 @@ public abstract class Entity {
      * Description:
      */
     public abstract void render(Graphics gfx);
+
+    /**
+     * Method name: getx 
+     * Argument type: void 
+     * Description: returns x position
+     */
+    public float getX() {
+        return this.x;
+    }
+
+    /**
+     * Method name: setX 
+     * Argument type: float 
+     * Description: sets the X position
+     */
+    public void setX(float x) {
+        this.x = x;
+    }
+    
+    /**
+     * Method name: getY 
+     * Argument type: void 
+     * Description: returns the y position
+     */
+    public float getY() {
+        return this.y;
+    }
+
+
+    /**
+     * Method name: setX 
+     * Argument type: float 
+     * Description: sets the Y position
+     */
+    public void setY(float y) {
+        this.y = y;
+    }
+    
+    /**
+     * Method name: getWidth 
+     * Argument type: void 
+     * Description: returns the width of the enitity
+     */
+    public int getWidth() {
+	    return this.width;
+    }
+
+    /**
+     * Method name: setWidth 
+     * Argument type: int 
+     * Description: sets the width of the entity
+     */
+    public void setWidth(int width) {
+	    this.width = width;
+    }
+
+    /**
+     * Method name: getHeight 
+     * Argument type: void 
+     * Description: returns the width of the enitity
+     */
+    public int getHeight() {
+	    return this.height;
+    }
+
+    /**
+     * Method name: setWidth 
+     * Argument type: int 
+     * Description: sets the width of the entity
+     */
+    public void setHeight(int width) {
+	    this.height = width;
+    }
 }
