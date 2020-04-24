@@ -2,7 +2,7 @@
 /**
  * Class Name: Creature 
  * Methods:getHealth, setHealth, getSpeed, setSpeed, getXMove, setXMove
- *         getYmove, setYmove
+ *         getYMove, setYMove
  * Description: 
  * 
  * author @Brown_Buddah 

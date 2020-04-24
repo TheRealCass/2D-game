@@ -1,6 +1,6 @@
 /**
  * Class Name: GrassTile 
- * Methods:
+ * Methods: isSolid
  * Description: 
  * 
  * author @Brown_Buddah 
@@ -23,8 +23,8 @@ public class GrassTile extends Tile {
      * Argument type: void
      * Return type: boolean
      * Description: returns true if not walkable
-     * @overide
      */
+    @Override
     public boolean isSolid(){
         return true;
     }

@@ -1,7 +1,7 @@
 import java.awt.Graphics;
 /**
  * Class Name: gameState 
- * Methods:
+ * Methods: update, render
  * Description: State where player interacts with game
  * 
  * author @Brown_Buddah 
@@ -11,6 +11,7 @@ import java.awt.Graphics;
 public class GameState extends State {
 
     private Player player;
+    private World world;
 
     /**
      * constructor
@@ -18,27 +19,29 @@ public class GameState extends State {
      */
     public GameState(Game game){
         super(game);
-        player = new Player(game, 100, 100);
+        player = new Player(game, 100, 100);  //has player
+        world = new World("");  //has world(background aka tileMap)
     
     }
 
     /**
      * Method name: update 
      * Argument type: void 
-     * Description: 
+     * Description: updates all the variables for each calss it's called on
      */
     public void update(){
+        world.update();
         player.update();
     }
 
     /**
      * Method name: render 
      * Argument type: Graphics 
-     * Description:
+     * Description: renders to the scfeen
      */
     public void render(Graphics gfx){
+        world.render(gfx);
         player.render(gfx);
-        Tile.tiles[2].render(gfx, 0, 0);
     }
 
 

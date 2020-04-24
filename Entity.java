@@ -2,7 +2,8 @@ import java.awt.Graphics;  //importign graphics obj
 
 /**
  * Class Name: Game 
- * Methods:
+ * Methods: render, update, getX, setX, getY, setY, getHeight, setHeight
+ *          getWidth, setWidth
  * Description: anything that is not a tile
  * 
  * author @Brown_Buddah 
