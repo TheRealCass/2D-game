@@ -1,5 +1,3 @@
-import java.awt.image.BufferedImage;
-
 /**
  * Class Name: GrassTile 
  * Methods:
@@ -16,8 +14,18 @@ public class GrassTile extends Tile {
     /**Constructor
      * Argument type: BufferedImage, int
      */
-    public GrassTile(BufferedImage texture, int id) {
-        super(texture, id);
+    public GrassTile(int id) {
+        super(Assets.grass, id);
     }
 
+    /**
+     * Method Name: isSolid
+     * Argument type: void
+     * Return type: boolean
+     * Description: returns true if not walkable
+     * @overide
+     */
+    public boolean isSolid(){
+        return true;
+    }
 }
