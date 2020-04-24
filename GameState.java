@@ -38,7 +38,7 @@ public class GameState extends State {
      */
     public void render(Graphics gfx){
         player.render(gfx);
-        Tile.tiles[0].render(gfx, 0, 0);
+        Tile.tiles[2].render(gfx, 0, 0);
     }
 
 
