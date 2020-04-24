@@ -17,9 +17,34 @@ public class Player extends Creature{
      * Argument Type: flaot
      */
     public Player(Game game, float x, float y) {
-        super(x, y);  //posotion
+        super(x, y, Creature.DEFAULT_CREATURE_HEIGHT, Creature.DEFAULT_CREATURE_HEIGHT);  //posotion
         this.game = game;
     }
+
+    /**
+     * Method name: getInput 
+     * Argument type: void 
+     * Description: updates position
+     */
+    private void getInput(){
+        xMove = 0;
+        yMove = 0;
+        
+        //checking keybord for input
+        if(game.getKeyManager().up){
+            yMove = -speed;
+        }//checking for up key
+        if(game.getKeyManager().down){
+            yMove = speed;
+        }//checking for down key
+        if(game.getKeyManager().left){
+            xMove = -speed;
+        }//checking for ;eft key
+        if(game.getKeyManager().right){
+            xMove = speed;
+        }//checking for right key
+    }
+
 
     /**
      * Method name: update 
@@ -27,21 +52,8 @@ public class Player extends Creature{
      * Description: updates position
      */
     public void update() {
-        if(game.getKeyManager().up) {
-            y--;
-        }
-       
-        if(game.getKeyManager().down) {
-            y++;
-        }
-
-        if(game.getKeyManager().left) {
-            x--;
-        }
-
-        if(game.getKeyManager().right) {
-            x++;
-        }
+        getInput();
+        move();
     }
 
     /**
@@ -50,7 +62,8 @@ public class Player extends Creature{
      * Description: draws player to screen
      */
     public void render(Graphics gfx) {
-        gfx.drawImage(Assets.player, (int)x, (int)y, null);
+        gfx.drawImage(Assets.player, (int)x, (int)y, width, height, null);
+        //gfx.drawImage(Assets.player, (int)x, (int)y, 64, 64, null);
     }
     
 }
