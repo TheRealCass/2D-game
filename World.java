@@ -17,13 +17,14 @@ public class World {
     private int[][] tilez;
     private int spawnX, spawnY;
 
-
+    private Game game;
 
     /**
      * Constructor
-     *  @param String
+     *  @param Game,String
      */
-    public World(String path){
+    public World(Game game, String path){
+        this.game = game;
         loadWorld(path);
     }
 

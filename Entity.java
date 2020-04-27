@@ -17,12 +17,15 @@ public abstract class Entity {
     //for size
     protected int width, height;
 
+    protected Game game;
+
     /**
      * Constructor
-     *  @param flaot
+     *  @param game,flaot,float,int,int
      */
-    public Entity(float x, float y,int width, int height) {
+    public Entity(Game game, float x, float y,int width, int height) {
         this.x = x;
+        this.game = game;
         this.y = y;
         this.width = width;
         this.height = height;

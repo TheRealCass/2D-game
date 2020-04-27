@@ -9,7 +9,6 @@ import java.awt.Graphics;  //importing graphics obj
  */
 public class Player extends Creature{
 
-    private Game game;
 
 
     /**
@@ -17,8 +16,7 @@ public class Player extends Creature{
      *  @param flaot
      */
     public Player(Game game, float x, float y) {
-        super(x, y, Creature.DEFAULT_CREATURE_HEIGHT, Creature.DEFAULT_CREATURE_HEIGHT);  //posotion
-        this.game = game;
+        super(game, x, y, Creature.DEFAULT_CREATURE_HEIGHT, Creature.DEFAULT_CREATURE_HEIGHT);  
     }
 
     /**

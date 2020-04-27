@@ -27,10 +27,10 @@ public abstract class Creature extends Entity{
 
     /**
      * Constructor
-     *  @param flaot
+     *  @param game,flaot,float,int,int
      */
-    public Creature(float x, float y, int width, int height) {
-        super(x, y, width, height);  //posotion & size
+    public Creature(Game game, float x, float y, int width, int height) {
+        super(game, x, y, width, height);  //posotion & size
         health = DEFAULT_HEALTH;
         speed = DEFAULT_SPEED;
         xMove = 0;
