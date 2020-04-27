@@ -13,6 +13,7 @@ public class World {
     //dimentions
     private int width, height;
 
+    //map data
     private int[][] tilez;
     private int spawnX, spawnY;
 
@@ -40,11 +41,11 @@ public class World {
         width = Utilities.parseInt(tokens[0]);  //first value is width
         height = Utilities.parseInt(tokens[1]);  //secound value is the height of the map
         spawnX = Utilities.parseInt(tokens[2]);  //3rd value is playern spawn X pos
-        spawnY = Utilities.parseInt(tokens[3])  //4th value is playern spawn y pos
+        spawnY = Utilities.parseInt(tokens[3]);  //4th value is playern spawn y pos
 
         tilez = new int[width][height];
-        for (int y = 0; y < tokens.length; y++) {
-            for (int x = 0; x < tokens.length; x++) {
+        for (int y = 0; y < height; y++) {
+            for (int x = 0; x < width; x++) {
                 tilez[x][y] = Utilities.parseInt(tokens[(x + y * width) + 4]);
             }
         }        
@@ -56,7 +57,7 @@ public class World {
      * Description: 
      */
     public void update(){
-
+    
     }
 
     /**Method Name: render

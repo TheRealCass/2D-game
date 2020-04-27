@@ -1,5 +1,6 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.IOException;
 
 /**
  * Class Name: Utilities
@@ -19,19 +20,16 @@ public class Utilities {
     public static String loadFileAsString(String path){
         StringBuilder builder = new StringBuilder(); //to attatch characters to a string
         try {
-            BufferedReader scan = new BufferedReader(new FileReader(path));  //scanning the text
-            String line;  //to store each line
-            while((line = scan.readLine()) != null){
+            BufferedReader scan = new BufferedReader(new FileReader(path));
+            String line;
+            while ((line = scan.readLine()) != null) {
                 builder.append(line + "\n");
-
-                scan.close();
-            }//runs as long as there is a next line
-
-        } catch (Exception e) {
-
-            e.printStackTrace();  //prints errors
-
-        }//to catch errors
+            }
+            scan.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        
 
         return builder.toString();// retuns the whole thing as a string
     }
