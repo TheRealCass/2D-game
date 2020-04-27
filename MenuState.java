@@ -13,7 +13,7 @@ public class MenuState extends State {
 
     /**
      * constructor 
-     * Argument type: Game
+     *  @param Game
      */
     public MenuState(Game game){
         super(game);
@@ -21,7 +21,7 @@ public class MenuState extends State {
 
     /**
      * Method name: update 
-     * Argument type: void 
+     *  @param void 
      * Description: 
      */
     public void update(){
@@ -30,7 +30,7 @@ public class MenuState extends State {
 
     /**
      * Method name: render 
-     * Argument type: Graphics 
+     *  @param Graphics 
      * Description:
      */
     public void render(Graphics gfx){

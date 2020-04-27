@@ -15,7 +15,7 @@ public class GameState extends State {
 
     /**
      * constructor
-     * Argument type: void
+     *  @param void
      */
     public GameState(Game game){
         super(game);
@@ -26,7 +26,7 @@ public class GameState extends State {
 
     /**
      * Method name: update 
-     * Argument type: void 
+     *  @param void 
      * Description: updates all the variables for each calss it's called on
      */
     public void update(){
@@ -36,7 +36,7 @@ public class GameState extends State {
 
     /**
      * Method name: render 
-     * Argument type: Graphics 
+     *  @param Graphics 
      * Description: renders to the scfeen
      */
     public void render(Graphics gfx){

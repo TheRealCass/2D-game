@@ -27,7 +27,7 @@ public abstract class Creature extends Entity{
 
     /**
      * Constructor
-     * Argument Type: flaot
+     *  @param flaot
      */
     public Creature(float x, float y, int width, int height) {
         super(x, y, width, height);  //posotion & size
@@ -40,7 +40,7 @@ public abstract class Creature extends Entity{
 
     /**
      * Method Name: move
-     * Argument type: void
+     *  @param void
      * Return Type: void
      * Description: enables creature to move across the screen
      */
@@ -51,7 +51,7 @@ public abstract class Creature extends Entity{
 
     /**
      * Method Name: getHealth
-     * Argument type: void
+     *  @param void
      * Return Type: int
      * Description: returns the health of the creature
      */
@@ -61,7 +61,7 @@ public abstract class Creature extends Entity{
 
     /**
      * Method Name: setHealth
-     * Argument type: int
+     *  @param int
      * Return Type: void
      * Description: sets the health of the creature
      */
@@ -71,7 +71,7 @@ public abstract class Creature extends Entity{
     
     /**
      * Method Name: getSpeed
-     * Argument type: void
+     *  @param void
      * Return Type: float
      * Description: returns the speed of the creature
      */
@@ -81,7 +81,7 @@ public abstract class Creature extends Entity{
 
     /**
      * Method Name: setSpeed
-     * Argument type: float
+     *  @param float
      * Return Type: void
      * Description: sets the speed of the creature
      */
@@ -91,7 +91,7 @@ public abstract class Creature extends Entity{
 
     /**
      * Method Name: getXMove
-     * Argument type: void
+     *  @param void
      * Return Type: float
      * Description: gets the xMove variable
      */
@@ -101,7 +101,7 @@ public abstract class Creature extends Entity{
 
     /**
      * Method Name: setXMove
-     * Argument type: flaot
+     *  @param flaot
      * Return Type: void
      * Description: sets the xMove variable
      */
@@ -111,7 +111,7 @@ public abstract class Creature extends Entity{
 
     /**
      * Method Name: getYMove
-     * Argument type: void
+     *  @param void
      * Return Type: float
      * Description: gets the yMove variable
      */
@@ -121,7 +121,7 @@ public abstract class Creature extends Entity{
     
     /**
      * Method Name: setXMove
-     * Argument type: flaot
+     *  @param flaot
      * Return Type: void
      * Description: sets the xMove variable
      */

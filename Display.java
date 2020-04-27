@@ -32,7 +32,7 @@ public class Display {
 
     /**
      * Method name: createDisplay 
-     * Argument type: void 
+     *  @param void 
      * Description: initialises JFrame. Set values and requirments for the JFrame
      */
     public void createDisplay(){
@@ -57,7 +57,7 @@ public class Display {
 
     /**
      * Method name: getCanvas 
-     * Argument type: void 
+     *  @param void 
      * Description: returns the canvas variable
      * 
      */
@@ -67,7 +67,7 @@ public class Display {
 
     /**
      * Method name: getCanvas 
-     * Argument type: void 
+     *  @param void 
      * Return type: JFrame
      * Description: returns the frame variable
      * 

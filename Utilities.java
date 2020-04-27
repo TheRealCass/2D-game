@@ -43,7 +43,7 @@ public class Utilities {
      */
     public static int parseInt(String number){
         try {
-            Integer.parseInt(number);
+            return Integer.parseInt(number);
         } catch (NumberFormatException e) {
             e.printStackTrace();  //print error to screen
             return 0;  //so method dosent crash

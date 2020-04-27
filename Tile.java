@@ -38,7 +38,7 @@ public class Tile {
 
     /**
      * Method Name: getID
-     * Argument Type: void
+     *  @param void
      * Return type: int
      * Description: getter for id variable
      */
@@ -48,7 +48,7 @@ public class Tile {
 
     /**
      * Method Name: update
-     * Argument Type: void
+     *  @param void
      * Return type: void
      * Description: 
      */
@@ -58,7 +58,7 @@ public class Tile {
 
     /**
      * Method Name: render
-     * Argument Type: void
+     *  @param void
      * Return type: void
      * Description: 
      */
@@ -67,7 +67,7 @@ public class Tile {
     }
 
     /**Method Name: isSolid
-     * Argument type: void
+     *  @param void
      * Return type: boolean
      * Description: returns true if not walkable
      */

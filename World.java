@@ -12,13 +12,15 @@ public class World {
 
     //dimentions
     private int width, height;
+
     private int[][] tilez;
+    private int spawnX, spawnY;
 
 
 
     /**
      * Constructor
-     * Argument type: String
+     *  @param String
      */
     public World(String path){
         loadWorld(path);
@@ -26,17 +28,30 @@ public class World {
 
 
 
-    /** Method Name: loadWorld
-     * Argument type: String
-     * Return type: void
-     * Description: 
+    /** 
+     * Method Name: loadWorld
+     * @param String
+     * @return (void) loads world from file
      */
     private void loadWorld(String path){
-        
+        String file = Utilities.loadFileAsString(path);  //loads the whole fole as a string
+        String[] tokens = file.split("\\s+");  //separates the string using spaces and newLine as dilimeters
+
+        width = Utilities.parseInt(tokens[0]);  //first value is width
+        height = Utilities.parseInt(tokens[1]);  //secound value is the height of the map
+        spawnX = Utilities.parseInt(tokens[2]);  //3rd value is playern spawn X pos
+        spawnY = Utilities.parseInt(tokens[3])  //4th value is playern spawn y pos
+
+        tilez = new int[width][height];
+        for (int y = 0; y < tokens.length; y++) {
+            for (int x = 0; x < tokens.length; x++) {
+                tilez[x][y] = Utilities.parseInt(tokens[(x + y * width) + 4]);
+            }
+        }        
     }
 
     /**Method Name: update
-     * Argument Type: void
+     *  @param void
      * Retuen Type: void
      * Description: 
      */
@@ -45,7 +60,7 @@ public class World {
     }
 
     /**Method Name: render
-     * Argument Type: Graphics
+     *  @param Graphics
      * Return Type: void
      * Description: renders the tile at x, y
      */
@@ -58,7 +73,7 @@ public class World {
     }
 
     /**Method Name: getTile
-     * Argument Type: int, int
+     *  @param int,int
      * Return Type: Tile
      * Description: returns the type of tyle at that x,y location
      *              If null, returns a dirt tile

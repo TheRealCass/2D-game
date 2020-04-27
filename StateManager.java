@@ -13,7 +13,7 @@ public class StateManager extends State {
 
     /**
      * constructor
-     * Argumetn type: Game
+     *  @param Game
      */
     public StateManager(Game game) {
         super(game);
@@ -21,7 +21,7 @@ public class StateManager extends State {
 
     /**
      * Method name: setSate 
-     * Argument type: State 
+     *  @param State 
      * Description: sets the sate to the one passed in the argument
      */
     public static void setState(State other) {
@@ -30,7 +30,7 @@ public class StateManager extends State {
 
     /**
      * Method name: getState 
-     * Argument type: void 
+     *  @param void 
      * Description: return current state
      */
     public static State getState() {

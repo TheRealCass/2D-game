@@ -12,7 +12,7 @@ public class GrassTile extends Tile {
 
 
     /**Constructor
-     * Argument type: BufferedImage, int
+     *  @param BufferedImage,int
      */
     public GrassTile(int id) {
         super(Assets.grass, id);
@@ -20,7 +20,7 @@ public class GrassTile extends Tile {
 
     /**
      * Method Name: isSolid
-     * Argument type: void
+     *  @param void
      * Return type: boolean
      * Description: returns true if not walkable
      */

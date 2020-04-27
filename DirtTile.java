@@ -12,7 +12,7 @@ public class DirtTile extends Tile {
 
 
     /**Constructor
-     * Argument type: BufferedImage, int
+     *  @param BufferedImage,int
      */
     public DirtTile(int id) {
         super(Assets.dirt, id);

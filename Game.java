@@ -34,7 +34,7 @@ public class Game implements Runnable {
 
     /**
      * constructor 
-     * Argument type: String, int, int
+     *  @param String, int, int
      */
     public Game(String title, int width, int height) {
         this.width = width;
@@ -45,7 +45,7 @@ public class Game implements Runnable {
 
     /**
      * Method name: start 
-     * Argument type: void 
+     *  @param void 
      * Description: starts the thread. i. e. starts this calss on a seperate instance
      */
     public synchronized void start() {
@@ -61,7 +61,7 @@ public class Game implements Runnable {
 
     /**
      * Method name: run 
-     * Argument type: void 
+     *  @param void 
      * Description: impliments runnable. Class runs on separate thread
      */
     public void run() {
@@ -106,8 +106,9 @@ public class Game implements Runnable {
 
 
     /**
-     * Method name: initialize Argument type: void Description: initialises the
-     * graphics of the game
+     * Method name: initialize
+     * @param void 
+     * Description: initialises the graphics of the game
      */
     private void initialize() {
         display = new Display(title, width, height); // creating a new display
@@ -125,7 +126,7 @@ public class Game implements Runnable {
 
     /**
      * Method name: update 
-     * Argument type: void 
+     *  @param void 
      * Description: updates the positions of stuff
      */
     private void update() {
@@ -142,7 +143,7 @@ public class Game implements Runnable {
 
     /**
      * Method name: initialize 
-     * Argument type: void 
+     *  @param void 
      * Description: displays updated objs on the screem
      */
     private void render() {
@@ -173,7 +174,7 @@ public class Game implements Runnable {
     
     /**
      * Method name: stop 
-     * Argument type: void
+     *  @param void
      *  Description: stops the thread. i. e.
      *             stops this calss on the seperate instance it was running on
      * 
@@ -192,7 +193,7 @@ public class Game implements Runnable {
 
     /**
      * Method name: getKeyManager 
-     * Argument type: void
+     *  @param void
      * Return Type; KeyManager
      * Description: returns keyManger
      */

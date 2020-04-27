@@ -13,7 +13,7 @@ public abstract class State {
 
     /**
      * Constructor
-     * Argument type: Game
+     *  @param Game
      */
     public State(Game game){
         this.game = game;
@@ -21,14 +21,14 @@ public abstract class State {
 
     /**
      * Method name: update 
-     * Argument type: void 
+     *  @param void 
      * Description: 
      */
     public abstract void update();
 
     /**
      * Method name: render 
-     * Argument type: Graphics 
+     *  @param Graphics 
      * Description:
      */
     public abstract void render(Graphics gfx);

@@ -19,7 +19,7 @@ public abstract class Entity {
 
     /**
      * Constructor
-     * Argument Type: flaot
+     *  @param flaot
      */
     public Entity(float x, float y,int width, int height) {
         this.x = x;
@@ -30,21 +30,21 @@ public abstract class Entity {
 
     /**
      * Method name: update 
-     * Argument type: void 
+     *  @param void 
      * Description:
      */
     public abstract void update();
 
     /**
      * Method name: render 
-     * Argument type: Graphics 
+     *  @param Graphics 
      * Description:
      */
     public abstract void render(Graphics gfx);
 
     /**
      * Method name: getx 
-     * Argument type: void 
+     *  @param void 
      * Description: returns x position
      */
     public float getX() {
@@ -53,7 +53,7 @@ public abstract class Entity {
 
     /**
      * Method name: setX 
-     * Argument type: float 
+     *  @param float 
      * Description: sets the X position
      */
     public void setX(float x) {
@@ -62,7 +62,7 @@ public abstract class Entity {
     
     /**
      * Method name: getY 
-     * Argument type: void 
+     *  @param void 
      * Description: returns the y position
      */
     public float getY() {
@@ -72,7 +72,7 @@ public abstract class Entity {
 
     /**
      * Method name: setX 
-     * Argument type: float 
+     *  @param float 
      * Description: sets the Y position
      */
     public void setY(float y) {
@@ -81,7 +81,7 @@ public abstract class Entity {
     
     /**
      * Method name: getWidth 
-     * Argument type: void 
+     *  @param void 
      * Description: returns the width of the enitity
      */
     public int getWidth() {
@@ -90,7 +90,7 @@ public abstract class Entity {
 
     /**
      * Method name: setWidth 
-     * Argument type: int 
+     *  @param int 
      * Description: sets the width of the entity
      */
     public void setWidth(int width) {
@@ -99,7 +99,7 @@ public abstract class Entity {
 
     /**
      * Method name: getHeight 
-     * Argument type: void 
+     *  @param void 
      * Description: returns the width of the enitity
      */
     public int getHeight() {
@@ -108,7 +108,7 @@ public abstract class Entity {
 
     /**
      * Method name: setWidth 
-     * Argument type: int 
+     *  @param int 
      * Description: sets the width of the entity
      */
     public void setHeight(int width) {

@@ -19,7 +19,7 @@ public class Assets {
 
     /**
      * Method name: initialize
-     * Argument type: void
+     *  @param void
      * Description: loads everythning
      */
     public static void initialize(){

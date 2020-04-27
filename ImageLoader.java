@@ -13,7 +13,7 @@ public class ImageLoader{
     
     /**
      * Method name: loadImage 
-     * Argument type: String 
+     *  @param String 
      * Description: loads image from path
      */
     public static BufferedImage loadImage(String path){

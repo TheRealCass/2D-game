@@ -15,7 +15,7 @@ public class SpriteSheet {
 
     /**
      * constructor 
-     * Argument type: String, int, int
+     *  @param String, int, int
      */
     public SpriteSheet(BufferedImage sheet){
         this.sheet = sheet;
@@ -23,7 +23,7 @@ public class SpriteSheet {
 
     /**
      * Method name: crop
-     *  Argument type: void 
+     *   @param void 
      * Description: gives us individual sprite
      */
     public BufferedImage crop(int x, int y, int width, int height){

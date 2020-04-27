@@ -14,7 +14,7 @@ public class Player extends Creature{
 
     /**
      * Constructor
-     * Argument Type: flaot
+     *  @param flaot
      */
     public Player(Game game, float x, float y) {
         super(x, y, Creature.DEFAULT_CREATURE_HEIGHT, Creature.DEFAULT_CREATURE_HEIGHT);  //posotion
@@ -23,7 +23,7 @@ public class Player extends Creature{
 
     /**
      * Method name: getInput 
-     * Argument type: void 
+     *  @param void 
      * Description: updates position
      */
     private void getInput(){
@@ -48,7 +48,7 @@ public class Player extends Creature{
 
     /**
      * Method name: update 
-     * Argument type: void 
+     *  @param void 
      * Description: updates position
      */
     public void update() {
@@ -58,7 +58,7 @@ public class Player extends Creature{
 
     /**
      * Method name: render 
-     * Argument type: Graphics 
+     *  @param Graphics 
      * Description: draws player to screen
      */
     public void render(Graphics gfx) {

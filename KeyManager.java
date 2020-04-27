@@ -19,7 +19,7 @@ public class KeyManager implements KeyListener {
 
     /**
      * constructor
-     * Argument type: void
+     *  @param void
      */
     public KeyManager(){
         keys = new boolean[256];
@@ -27,7 +27,7 @@ public class KeyManager implements KeyListener {
 
     /**
      * Method Name: KeyPressed
-     * Argumetn type: keyEvent
+     *  @param keyEvent
      * Return type: void
      * discription: gets keycode for button & turns it true
      */    
@@ -39,7 +39,7 @@ public class KeyManager implements KeyListener {
 
     /**
      * Method Name: keyReleased
-     * Argumetn type: keyEvent
+     *  @param keyEvent
      * Return type: void
      * discription: gets keycode for button & turns it false
      */
@@ -49,7 +49,7 @@ public class KeyManager implements KeyListener {
 
     /**
      * Method Name: update
-     * Argumetn type: void
+     *  @param void
      * Return type: void
      * discription: 
      */
@@ -62,7 +62,7 @@ public class KeyManager implements KeyListener {
 
     /**
      * Method Name: keyTyped
-     * Argumetn type: keyEvent
+     *  @param keyEvent
      * Return type:
      * discription:
      */
