@@ -20,8 +20,10 @@ public class GameState extends State {
     public GameState(Game game){
         super(game);
         player = new Player(game, 100, 100);  //has player
-        world = new World(game, "resources/worlds/world2.txt");  //has world(background aka tileMap)
-    
+        world = new World(game, "resources/worlds/world3.txt");  //has world(background aka tileMap)
+
+        game.getCamera().move(0, 0);
+        
     }
 
     /**
@@ -32,6 +34,8 @@ public class GameState extends State {
     public void update(){
         world.update();
         player.update();
+
+        game.getCamera().move(1, 1);
     }
 
     /**

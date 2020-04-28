@@ -23,6 +23,7 @@ public class GameCamera {
     }
 
     /**
+     * Method name: getXOffset
      * @param void
      * @return (float) xOffset variable
      */
@@ -31,6 +32,7 @@ public class GameCamera {
     }
 
     /**
+     * Method name: setXOffset
      * @param float
      * @return (void) sets yOffset variable
      */
@@ -39,6 +41,7 @@ public class GameCamera {
     }
 
     /**
+     * Method name: getYOffset
      * @param void
      * @return (float) gets yOffset variable
      */
@@ -46,8 +49,27 @@ public class GameCamera {
         return this.yOffset;
     }
 
+    /**
+     * Method name: getYOffset
+     * @param void
+     * @return (void) gets yOffset variable
+     */
     public void setYOffset(float yOffset) {
         this.yOffset = yOffset;
+
+
+    }
+
+    /**
+     * Method name: move
+     * @param float,float
+     * @return (void) adds move amnt to offset
+     */
+    public void move(float xAmount, float yAmount) {
+        this.xOffset = xAmount;
+        this.yOffset = yAmount;
+
+
     }
 
 }

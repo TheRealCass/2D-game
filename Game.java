@@ -12,7 +12,7 @@ public class Game implements Runnable {
 
     // variables for the window
     private Display display;
-    public int width, height;
+    private int width, height;
     public String title;
 
     private Thread thread;
@@ -28,6 +28,9 @@ public class Game implements Runnable {
 
     //input
     private KeyManager keyManager;
+
+    //camera
+    private GameCamera camera;
 
     //debug
     private boolean DEBUG = false;
@@ -115,7 +118,10 @@ public class Game implements Runnable {
         display.getJFrame().addKeyListener(keyManager);  //adding keyListner to the Jframe
         
         // initialising assets
-        Assets.initialize(); 
+        Assets.initialize();
+
+        //initialising game camera
+        camera = new GameCamera(0,0);
 
         // initialising states
         gameState = new GameState(this);
@@ -201,4 +207,30 @@ public class Game implements Runnable {
         return keyManager;
     }
 
+    /**
+     * Name: getGameCamera
+     * @param void
+     * @return (GameCamera)
+     */
+    public GameCamera getCamera() {
+        return this.camera;
+    }
+
+    /**
+     * Name: getWidth
+     * @param void
+     * @return (int) the width variable
+     */
+    public int getWidth() {
+        return this.width;
+    }
+
+    /**
+     * Name: getHeight
+     * @param void
+     * @return (int) the height variable
+     */
+    public int getHeight() {
+        return this.height;
+    }
 }
