@@ -35,7 +35,7 @@ public class GameCamera {
      */
     public void centerOnEntity(Entity e){
         xOffset = e.getX() - game.getWidth() / 2 + e.getWidth() / 2; //ventering hroizontally
-        yOffset = e.getX() - game.getHeight() / 2 + e.getHeight() /2;  //centering vertically
+        yOffset = e.getY() - game.getHeight() / 2 + e.getHeight() /2;  //centering vertically
         
     }
 

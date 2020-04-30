@@ -62,7 +62,7 @@ public class Player extends Creature{
      */
     public void render(Graphics gfx) {
         gfx.drawImage(Assets.player, (int) (x - game.getCamera().getXOffset()),  //taking out the borders
-                                     (int) (y - game.getCamera().getXOffset())  //taking out the borders
+                                     (int) (y - game.getCamera().getYOffset())  //taking out the borders
                                      , width, height, null);
         //gfx.drawImage(Assets.player, (int)x, (int)y, 64, 64, null);
     }
