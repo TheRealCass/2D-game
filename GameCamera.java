@@ -4,7 +4,7 @@
  * Description: enables camera to move with the player 
  * 
  * author @Brown_Buddah 
- * version(4/27/2020)
+ * version(4/30/2020)
  */
 public class GameCamera {
 
@@ -28,16 +28,7 @@ public class GameCamera {
 
 
 
-    /**
-     * Method name: centerOnEntity
-     * @param entity
-     * @return (void) cenetrs camera on enity
-     */
-    public void centerOnEntity(Entity e){
-        xOffset = e.getX() - game.getWidth() / 2 + e.getWidth() / 2; //ventering hroizontally
-        yOffset = e.getY() - game.getHeight() / 2 + e.getHeight() /2;  //centering vertically
-        
-    }
+    
 
     /**
      * Method name: getXOffset
@@ -87,6 +78,17 @@ public class GameCamera {
         this.yOffset += yAmount;
 
 
+    }
+
+    /**
+     * Method name: centerOnEntity
+     * @param entity
+     * @return (void) cenetrs camera on enity
+     */
+    public void centerOnEntity(Entity e){
+        xOffset = e.getX() - game.getWidth() / 2 + e.getWidth() / 2; //ventering hroizontally
+        yOffset = e.getY() - game.getHeight() / 2 + e.getHeight() /2;  //centering vertically
+        
     }
 
 }
