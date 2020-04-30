@@ -66,8 +66,8 @@ public class GameCamera {
      * @return (void) adds move amnt to offset
      */
     public void move(float xAmount, float yAmount) {
-        this.xOffset = xAmount;
-        this.yOffset = yAmount;
+        this.xOffset += xAmount;
+        this.yOffset += yAmount;
 
 
     }
