@@ -22,7 +22,6 @@ public class GameState extends State {
         player = new Player(game, 100, 100);  //has player
         world = new World(game, "resources/worlds/world3.txt");  //has world(background aka tileMap)
 
-        game.getCamera().move(0, 0);
         
     }
 
@@ -35,7 +34,6 @@ public class GameState extends State {
         world.update();
         player.update();
 
-        game.getCamera().move(1, 1);
     }
 
     /**

@@ -52,6 +52,7 @@ public class Player extends Creature{
     public void update() {
         getInput();
         move();
+        game.getCamera().centerOnEntity(this);
     }
 
     /**
@@ -60,7 +61,9 @@ public class Player extends Creature{
      * Description: draws player to screen
      */
     public void render(Graphics gfx) {
-        gfx.drawImage(Assets.player, (int)x, (int)y, width, height, null);
+        gfx.drawImage(Assets.player, (int) (x - game.getCamera().getXOffset()),  //taking out the borders
+                                     (int) (y - game.getCamera().getXOffset())  //taking out the borders
+                                     , width, height, null);
         //gfx.drawImage(Assets.player, (int)x, (int)y, 64, 64, null);
     }
     

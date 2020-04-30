@@ -8,18 +8,35 @@
  */
 public class GameCamera {
 
+    //coordinates
     private float xOffset;
     private float yOffset;
 
+    //game obj to get a reference of the entity to follow
+    private Game game;
 
 
     /**
      * Constructor
-    * @param float,flaot
+    * @param game,float,flaot
      */
-    public GameCamera(float xOffset, float yOffset){
+    public GameCamera(Game game, float xOffset, float yOffset){
+        this.game = game;
         this.xOffset = xOffset;
         this.yOffset = yOffset;
+    }
+
+
+
+    /**
+     * Method name: centerOnEntity
+     * @param entity
+     * @return (void) cenetrs camera on enity
+     */
+    public void centerOnEntity(Entity e){
+        xOffset = e.getX() - game.getWidth() / 2 + e.getWidth() / 2; //ventering hroizontally
+        yOffset = e.getX() - game.getHeight() / 2 + e.getHeight() /2;  //centering vertically
+        
     }
 
     /**

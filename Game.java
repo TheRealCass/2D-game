@@ -121,7 +121,7 @@ public class Game implements Runnable {
         Assets.initialize();
 
         //initialising game camera
-        camera = new GameCamera(0,0);
+        camera = new GameCamera(this, 0,0);
 
         // initialising states
         gameState = new GameState(this);
