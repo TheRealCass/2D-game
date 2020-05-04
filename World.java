@@ -67,8 +67,16 @@ public class World {
      * Description: renders the tile at x, y
      */
     public void render(Graphics gfx){
-        for (int y = 0; y < height; y++) {
-            for(int x =0; x < width; x++) {
+
+        //to render only the the tiles in the screen
+        int xStart = (int) Math.max(0, game.getCamera().getXOffset() / Tile.TILE_HEIGHT) ;  
+        int xEnd = width;
+        int yStart = 0;
+        int yEnd = height;
+
+
+        for (int y = yStart; y < yEnd ; y++) {
+            for(int x = xStart; x < xEnd; x++) {
                 getTile(x, y).render(
                                      gfx, (int) (x * Tile.TILE_WIDTH - game.getCamera().getXOffset()),
                                           (int) (y * Tile.TILE_HEIGHT - game.getCamera().getYOffset())
