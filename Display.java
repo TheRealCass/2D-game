@@ -1,13 +1,13 @@
 import javax.swing.JFrame; //for displaying windows
-import java.awt.*;  //for canvas obj
+import java.awt.*;  //for canvas & dimention obj
 
 /**
  * Class Name: Display 
- * Methods: getCanvas
+ * Methods: getCanvas, get Jframe
  * Description: Handles screen renders
  * 
  * author @Brown_Buddah 
- * version(4/18/2020)
+ * version(/5/2020)
  */
 public class Display {
 
@@ -35,7 +35,7 @@ public class Display {
      *  @param void 
      * Description: initialises JFrame. Set values and requirments for the JFrame
      */
-    public void createDisplay(){
+    private void createDisplay(){
         frame = new JFrame(title);
         frame.setSize(width, height);  //setting the dimentions of the window
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //makes sure games closes when window does too
@@ -57,9 +57,8 @@ public class Display {
 
     /**
      * Method name: getCanvas 
-     *  @param void 
-     * Description: returns the canvas variable
-     * 
+     * @param void 
+     * @return (canvas) the canvas variable
      */
     public Canvas getCanvas(){
         return canvas;
@@ -68,9 +67,7 @@ public class Display {
     /**
      * Method name: getCanvas 
      *  @param void 
-     * Return type: JFrame
-     * Description: returns the frame variable
-     * 
+     *  @return (JFrame) the frame variable
      */
     public JFrame getJFrame(){
         return frame;
